@@ -380,6 +380,11 @@ h3 {
   color: var(--moss);
 }
 
+.faq .button {
+  margin-top: 1.1rem;
+  color: #f6f1e8;
+}
+
 .raising {
   padding: clamp(4rem, 8vw, 6.5rem) 0;
 }
@@ -459,6 +464,38 @@ h3 {
   color: #d7c4a4;
 }
 
+.apply .actions {
+  margin-top: 1.5rem;
+}
+
+.apply .button {
+  background: #f6f1e8;
+  color: var(--moss-deep);
+}
+
+.apply .button:hover {
+  background: #fff;
+}
+
+.form-page {
+  width: min(46rem, calc(100% - var(--pad) * 2));
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3rem, 7vw, 5rem);
+}
+
+.form-page h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.form-page .lede a {
+  white-space: nowrap;
+}
+
+.nav a[aria-current="page"] {
+  color: var(--moss);
+}
+
 .phone {
   margin: 0.5rem 0 0.25rem;
   font-family: var(--serif);
@@ -477,17 +514,16 @@ h3 {
 
 #form-mount {
   margin-top: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  min-height: 28rem;
+  background: transparent;
+  min-height: 0;
 }
 
 #form-mount iframe {
   width: 100%;
-  min-height: 42rem;
+  height: 75rem;
   border: 0;
   display: block;
+  overflow: hidden;
 }
 
 .site-footer {

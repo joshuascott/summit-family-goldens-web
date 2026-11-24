@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^apply/$ /apply [R=301,L]
+RewriteRule ^apply$ apply.html [L]

@@ -2,7 +2,7 @@
    ownerFormUrl: the owner application (Google Form, Jotform, or any https form).
    facebookHeritageUrl: the second Facebook page. */
 const CONFIG = {
-  ownerFormUrl: "",
+  ownerFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSejZ1iTLIuS1fp2vUf2D-iCTwqxkx6JntDR0uv_aNv6Y7UyKQ/viewform",
   facebookHeritageUrl: "",
 };
 

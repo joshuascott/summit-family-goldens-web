@@ -2,3 +2,23 @@
   from = "/index.html"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "/apply/"
+  to = "/apply"
+  status = 301
+
+[[redirects]]
+  from = "/apply"
+  to = "/apply.html"
+  status = 200
+
+[[headers]]
+  for = "/apply"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/apply.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
