@@ -83,31 +83,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  text-decoration: none;
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
   margin-right: auto;
+  min-width: 0;
 }
 
-.brand em {
-  font-style: italic;
-  font-weight: 560;
-}
-
-.mark {
-  width: 2rem;
-  height: 1.25rem;
-  color: var(--moss);
-}
-
-.mark path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  stroke-linejoin: round;
-  stroke-linecap: round;
+.brand img {
+  display: block;
+  width: min(20rem, 100%);
+  height: auto;
 }
 
 .nav {
@@ -366,6 +349,35 @@ h3 {
   padding-bottom: 0.05rem;
 }
 
+.questions {
+  width: min(var(--wrap), calc(100% - var(--pad) * 2));
+  margin-inline: auto;
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+}
+
+.faq article {
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.faq h3 {
+  font-size: 1.45rem;
+}
+
+.faq p {
+  margin: 0;
+}
+
+.faq a {
+  color: var(--moss);
+}
+
 .raising {
   padding: clamp(4rem, 8vw, 6.5rem) 0;
 }
@@ -486,6 +498,12 @@ h3 {
   font-size: 0.92rem;
 }
 
+.footer-logo {
+  display: block;
+  width: min(16rem, 100%);
+  height: auto;
+}
+
 .site-footer p {
   margin: 0;
 }
@@ -513,7 +531,6 @@ h3 {
     grid-column: 1;
     grid-row: 1;
     margin-right: 0;
-    font-size: 1.02rem;
   }
 
   .header-call {
@@ -535,6 +552,7 @@ h3 {
   .dog-grid,
   .raising ol,
   .follow-grid,
+  .faq,
   .facts {
     grid-template-columns: 1fr;
   }
