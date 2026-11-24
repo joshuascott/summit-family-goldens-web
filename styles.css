@@ -74,7 +74,7 @@ a {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 0.9rem var(--pad);
+  padding: 0.9rem max(var(--pad), calc((100% - var(--wrap)) / 2));
   background: rgba(246, 241, 232, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -103,6 +103,7 @@ a {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav a:hover,
@@ -111,6 +112,7 @@ a {
 }
 
 .header-call {
+  flex-shrink: 0;
   border: 1px solid var(--ink);
   border-radius: 999px;
   padding: 0.4rem 0.85rem;
@@ -493,7 +495,7 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 1.4rem var(--pad) 1.8rem;
+  padding: 1.4rem max(var(--pad), calc((100% - var(--wrap)) / 2)) 1.8rem;
   color: var(--muted);
   font-size: 0.92rem;
 }
@@ -524,7 +526,6 @@ h3 {
     align-items: center;
     column-gap: 0.5rem;
     row-gap: 0.75rem;
-    padding-inline: 1rem;
   }
 
   .brand {
